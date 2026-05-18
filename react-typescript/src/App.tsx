@@ -1,5 +1,5 @@
 // import List from "./03-State/List";
-import Component from "./04-Events";
+import Component from "./08-RTK";
 
 export default function App() {
   return (
@@ -8,8 +8,10 @@ export default function App() {
       {/* <Component username="peter" id={123}>
         <h2>Hello Children Props</h2>
       </Component> */}
-      <Component />
       {/* <List /> */}
+      {/* <Component type="basic" name="John" />
+      <Component type="advanced" name="Jane" email="jane@example.com" /> */}
+      <Component />
     </main>
   );
 }

@@ -9,10 +9,12 @@ export default function About() {
       </h1>
 
       <p className="mt-6 text-lg tracking-wide leading-8 max-w-2xl mx-auto">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic veniam
-        odit, officiis eos mollitia alias, doloremque, aspernatur ratione
-        asperiores voluptas labore minus dolores reprehenderit corporis quos.
-        Assumenda molestias harum dignissimos?
+        Welcome to Comfy Store, your destination for comfortable and stylish
+        furniture. We believe that home should be a place of comfort and
+        relaxation. Our carefully curated collection features high-quality
+        pieces designed to make your living spaces feel inviting and cozy. From
+        modern minimalist designs to classic comfort, we have something for
+        every style and budget.
       </p>
     </section>
   );

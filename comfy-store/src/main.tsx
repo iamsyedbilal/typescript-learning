@@ -16,6 +16,7 @@ import {
   Register,
   SingleProduct,
 } from "./pages";
+import { loader as landingLoader } from "./pages/Landing.tsx";
 import { ErrorElement } from "./components";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
@@ -28,6 +29,8 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Landing />,
+        errorElement: <ErrorElement />,
+        loader: landingLoader,
       },
       {
         path: "/cart",

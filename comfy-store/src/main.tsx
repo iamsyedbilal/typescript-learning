@@ -16,7 +16,8 @@ import {
   Register,
   SingleProduct,
 } from "./pages";
-import { loader as landingLoader } from "./pages/Landing.tsx";
+import { loader as landingLoader } from "./loaders/featuresProducts.ts";
+import { loader as productLoader } from "./loaders/productsLoader.ts";
 import { ErrorElement } from "./components";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
@@ -40,6 +41,7 @@ const router = createBrowserRouter([
       {
         path: "/products",
         element: <Products />,
+        loader: productLoader,
         errorElement: <ErrorElement />,
       },
       {

@@ -18,8 +18,10 @@ import {
 } from "./pages";
 import { loader as landingLoader } from "./loaders/featuresProducts.ts";
 import { loader as productLoader } from "./loaders/productsLoader.ts";
+import { loader as singleProductLoader } from "./loaders/singleProductLoader.ts";
 import { ErrorElement } from "./components";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { Toaster } from "@/components/ui/sonner";
 
 const router = createBrowserRouter([
   {
@@ -48,6 +50,7 @@ const router = createBrowserRouter([
         path: "/products/:id",
         element: <SingleProduct />,
         errorElement: <ErrorElement />,
+        loader: singleProductLoader,
       },
       {
         path: "/checkout",
@@ -85,6 +88,7 @@ const router = createBrowserRouter([
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <Provider store={store}>
+      <Toaster />
       <RouterProvider router={router} />
     </Provider>
   </StrictMode>,
